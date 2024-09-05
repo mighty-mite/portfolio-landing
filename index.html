@@ -3,7 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="menu__image-link" href="#"
+          ><img class="menu__logo" src="./img/logo.svg" alt="logo"
+        /></a>
+        <div class="menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+            <li><a class="menu__item" href="#">Tech Stack</a></li>
+            <li><a class="menu__item" href="#">Projects</a></li>
+            <li><a class="menu__item" href="#">Contact</a></li>
+            <li>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__item-link" href="*"
+                    ><img src="./img/github.svg" alt="github link"
+                  /></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item-link" href="*"
+                    ><img src="./img/twitter.svg" alt="twitter link"
+                  /></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item-link" href="*"
+                    ><img src="./img/instagram.svg" alt="instagram link"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

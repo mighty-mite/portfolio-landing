@@ -1,0 +1,12 @@
+.social,
+.social__item,
+.social__item-link {
+  @include flex-center;
+  gap: 15px;
+}
+
+@media (min-width: 1024px) {
+  .social {
+    gap: 20px;
+  }
+}
