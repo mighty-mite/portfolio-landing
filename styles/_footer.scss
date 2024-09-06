@@ -1,0 +1,73 @@
+.footer__container {
+  font-style: normal;
+  padding: 40px 0;
+}
+
+.footer__menu {
+  display: none;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__menu-link {
+  color: $secondary-text;
+}
+
+.footer__text {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: $text-color;
+}
+
+.footer__gradient-1 {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__gradient-2 {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__gradient-3 {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 1024px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer__menu {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* Be sure to take a lo */
+
+// background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// background-clip: text;
+// text-fill-color: transparent;
+
+// mix-blend-mode: normal;

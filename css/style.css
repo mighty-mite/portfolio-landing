@@ -504,4 +504,120 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 45px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.contact__container {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding: 40px 0;
+  border-bottom: 2px solid #cccccc;
+}
+
+.contact__link {
+  color: #42446e;
+}
+
+@media (min-width: 768px) {
+  .contact__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+  .contact__logo {
+    margin-right: auto;
+  }
+}
+.footer__container {
+  font-style: normal;
+  padding: 40px 0;
+}
+
+.footer__menu {
+  display: none;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__menu-link {
+  color: #42446e;
+}
+
+.footer__text {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #666666;
+}
+
+.footer__gradient-1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), color-stop(200%, #e70faa));
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__gradient-2 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), to(#e70faa));
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__gradient-3 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), to(#e70faa));
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 1024px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/* Be sure to take a lo *//*# sourceMappingURL=style.css.map */
