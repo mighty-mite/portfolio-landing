@@ -1,0 +1,62 @@
+.banner {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: $secondary-text;
+}
+
+.banner__container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.banner__gradient {
+  // color: transparent;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // background-image: linear-gradient(to right, #13b0f5, #e70faa);
+
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.banner__img {
+  width: 100%;
+  max-width: 349px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .banner__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner__heading {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .banner__container {
+    padding: 180px 0;
+  }
+}
