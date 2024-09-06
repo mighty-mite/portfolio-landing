@@ -1,0 +1,82 @@
+.card {
+  // width: 80vw;
+  // height: 567px;
+
+  background: white;
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.card__heading {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card__description {
+  font-weight: 300;
+  color: $dark-content;
+  margin-bottom: 5px;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+}
+
+.card__content {
+  padding: 20px;
+}
+
+.card__stack-container {
+  color: $secondary-text;
+  margin-bottom: 5px;
+}
+
+.card__heading-2 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card__stack {
+  font-size: 300;
+  font-size: 14px;
+}
+
+.card__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__live,
+.card__github {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .card__heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .card__description {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .card__stack-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .card__links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
