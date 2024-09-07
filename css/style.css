@@ -217,8 +217,8 @@ ul {
 }
 
 .banner__gradient {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), color-stop(200%, #e70faa));
-  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 200%);
+  background: -webkit-gradient(linear, left top, right top, from(#18abf2), to(#7565d2));
+  background: linear-gradient(90deg, #18abf2 0%, #7565d2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -608,24 +608,24 @@ ul {
 }
 
 .footer__gradient-1 {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), color-stop(200%, #e70faa));
-  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 200%);
+  background: -webkit-gradient(linear, left top, right top, from(#7267d3), to(#9949c5));
+  background: linear-gradient(90deg, #7267d3 0%, #9949c5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .footer__gradient-2 {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), to(#e70faa));
-  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#b038bd), to(#c02cb7));
+  background: linear-gradient(90deg, #b038bd 0%, #c02cb7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .footer__gradient-3 {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), to(#e70faa));
-  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#b820a1), to(#e50faa));
+  background: linear-gradient(90deg, #b820a1 0%, #e50faa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
