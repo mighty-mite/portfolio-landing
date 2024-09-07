@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  // overflow-x: auto;
 }
 
 .projects__heading {
@@ -31,13 +30,13 @@
 
 @media (min-width: 768px) {
   .projects__heading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 50px;
   }
 
   .projects__subheading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 100px;
   }
@@ -48,8 +47,21 @@
 }
 
 @media (min-width: 1024px) {
+  .projects__container {
+    padding: 70px 0;
+  }
   .projects__list {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 45px;
+  }
+
+  .projects__heading {
+    font-size: 48px;
+    line-height: 26px;
+  }
+
+  .projects__subheading {
+    font-size: 32px;
+    line-height: 26px;
   }
 }

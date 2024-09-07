@@ -124,7 +124,7 @@ cardBkgs.map((item) => {
     "card__heading-2",
     null,
     null,
-    "Tech Stack: ",
+    "Tech Stack:",
     stackContainer
   );
   const stack = createElement(
@@ -132,7 +132,7 @@ cardBkgs.map((item) => {
     "card__stack",
     null,
     null,
-    "HTML , JavaScript, SASS, React",
+    "HTML, JavaScript, SASS, React",
     stackContainer
   );
 
@@ -160,7 +160,14 @@ cardBkgs.map((item) => {
     null,
     liveLink
   );
-  const liveText = createElement("span", "", "", "", "Live Preview", liveLink);
+  const liveText = createElement(
+    "span",
+    "card__live-text",
+    "",
+    "",
+    "Live Preview",
+    liveLink
+  );
 
   const githubLink = createElement(
     "a",
@@ -180,7 +187,7 @@ cardBkgs.map((item) => {
   );
   const githubText = createElement(
     "span",
-    "",
+    "card__github-text",
     "",
     "",
     "Code Preview",
@@ -195,6 +202,8 @@ window.addEventListener("resize", (e) => {
     if (width < 1280) {
       const trimmed = text.slice(0, 30) + "...";
       item.textContent = trimmed;
+    } else {
+      item.textContent = text;
     }
   });
 });

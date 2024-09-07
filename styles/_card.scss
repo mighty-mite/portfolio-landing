@@ -38,7 +38,7 @@
 }
 
 .card__stack {
-  font-size: 300;
+  font-weight: 300;
   font-size: 14px;
 }
 
@@ -55,25 +55,37 @@
   color: black;
 }
 
+.card__live-text,
+.card__github-text {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .card__heading {
     font-size: 28px;
-    margin-bottom: 15px;
+    line-height: 26px;
+    margin-bottom: 26px;
   }
   .card__description {
     font-size: 18px;
+    line-height: 26px;
     margin-bottom: 15px;
   }
 
   .card__stack-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 15px;
   }
 
   .card__links {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card__stack-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }

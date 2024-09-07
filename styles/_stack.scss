@@ -58,14 +58,32 @@
   }
 
   .stack__heading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 50px;
   }
 
   .stack__subheading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stack__container {
+    padding: 170px 0;
+  }
+
+  .stack__heading {
+    font-size: 48px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .stack__subheading {
+    font-size: 32px;
+    line-height: 26px;
     margin-bottom: 100px;
   }
 }

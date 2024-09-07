@@ -181,7 +181,7 @@ ul {
     gap: 20px;
   }
 }
-.header {
+.header__container {
   padding-top: 20px;
 }
 
@@ -217,8 +217,8 @@ ul {
 }
 
 .banner__gradient {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), to(#e70faa));
-  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(-2.06%, #13b0f5), color-stop(200%, #e70faa));
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 200%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -255,8 +255,8 @@ ul {
   }
 }
 @media (min-width: 1280px) {
-  .banner {
-    font-size: 40px;
+  .banner__heading {
+    font-size: 58px;
     line-height: 70px;
   }
   .banner__container {
@@ -343,13 +343,28 @@ ul {
     height: 100%;
   }
   .stack__heading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 50px;
   }
   .stack__subheading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .stack__container {
+    padding: 170px 0;
+  }
+  .stack__heading {
+    font-size: 48px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+  .stack__subheading {
+    font-size: 32px;
+    line-height: 26px;
     margin-bottom: 100px;
   }
 }
@@ -393,7 +408,7 @@ ul {
 }
 
 .card__stack {
-  font-size: 300;
+  font-weight: 300;
   font-size: 14px;
 }
 
@@ -419,23 +434,23 @@ ul {
   color: black;
 }
 
+.card__live-text,
+.card__github-text {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .card__heading {
     font-size: 28px;
-    margin-bottom: 15px;
+    line-height: 26px;
+    margin-bottom: 26px;
   }
   .card__description {
     font-size: 18px;
+    line-height: 26px;
     margin-bottom: 15px;
   }
   .card__stack-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 10px;
     margin-bottom: 15px;
   }
   .card__links {
@@ -446,6 +461,17 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media (min-width: 1600px) {
+  .card__stack-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
   }
 }
 .projects {
@@ -485,12 +511,12 @@ ul {
 
 @media (min-width: 768px) {
   .projects__heading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 50px;
   }
   .projects__subheading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 100px;
   }
@@ -500,9 +526,20 @@ ul {
   }
 }
 @media (min-width: 1024px) {
+  .projects__container {
+    padding: 70px 0;
+  }
   .projects__list {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 45px;
+  }
+  .projects__heading {
+    font-size: 48px;
+    line-height: 26px;
+  }
+  .projects__subheading {
+    font-size: 32px;
+    line-height: 26px;
   }
 }
 .contact__container {
@@ -530,6 +567,7 @@ ul {
 
 @media (min-width: 768px) {
   .contact__container {
+    padding-top: 130px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -538,6 +576,10 @@ ul {
   }
   .contact__logo {
     margin-right: auto;
+  }
+  .contact__link {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 .footer__container {
@@ -561,6 +603,7 @@ ul {
 .footer__text {
   font-family: "Poppins";
   font-size: 18px;
+  line-height: 26px;
   color: #666666;
 }
 
@@ -608,6 +651,10 @@ ul {
     display: flex;
     gap: 15px;
   }
+  .footer__menu-item {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 @media (min-width: 1280px) {
   .footer__container {
@@ -618,6 +665,6 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 60px 0;
   }
-}
-/* Be sure to take a lo *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

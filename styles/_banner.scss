@@ -16,12 +16,7 @@
 }
 
 .banner__gradient {
-  // color: transparent;
-  // -webkit-background-clip: text;
-  // background-clip: text;
-  // background-image: linear-gradient(to right, #13b0f5, #e70faa);
-
-  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 200%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -52,8 +47,8 @@
 }
 
 @media (min-width: 1280px) {
-  .banner {
-    font-size: 40px;
+  .banner__heading {
+    font-size: 58px;
     line-height: 70px;
   }
   .banner__container {
