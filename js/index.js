@@ -1,3 +1,8 @@
+const repoName =
+  window.location.hostname === "localhost"
+    ? ""
+    : "https://mighty-mite.github.io/portfolio-landing/";
+
 const menuBtn = document.querySelector(".menu__btn");
 const menuBox = document.querySelector(".menu__box");
 const menuInput = document.querySelector("#menu__toggle");
@@ -12,20 +17,20 @@ menuBtn.addEventListener("click", () => {
 });
 
 // STACK
-
+const imgSrc = `${repoName}/img/photo.png`;
 const icons = [
-  "./icons/html.svg",
-  "./icons/css.svg",
-  "./icons/js.svg",
-  "./icons/react.svg",
-  "./icons/redux.svg",
-  "./icons/bootstrap.svg",
-  "./icons/tailwind.svg",
-  "./icons/sass.svg",
-  "./icons/git.svg",
-  "./icons/guy.svg",
-  "./icons/vscode.svg",
-  "./icons/github.svg",
+  `${repoName}/icons/html.svg`,
+  `${repoName}/icons/css.svg`,
+  `${repoName}/icons/js.svg`,
+  `${repoName}/icons/react.svg`,
+  `${repoName}/icons/redux.svg`,
+  `${repoName}/icons/bootstrap.svg`,
+  `${repoName}/icons/tailwind.svg`,
+  `${repoName}/icons/sass.svg`,
+  `${repoName}/icons/git.svg`,
+  `${repoName}/icons/guy.svg`,
+  `${repoName}/icons/vscode.svg`,
+  `${repoName}/icons/github.svg`,
 ];
 const list = document.querySelector(".stack__list");
 
@@ -70,15 +75,14 @@ function createElement(
 
 const text =
   "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content";
-/* Rectangle 1 */
 
 const cardBkgs = [
-  "./card-bkg/1.png",
-  "./card-bkg/2.png",
-  "./card-bkg/3.png",
-  "./card-bkg/4.png",
-  "./card-bkg/5.png",
-  "./card-bkg/6.png",
+  `${repoName}/card-bkg/1.png`,
+  `${repoName}/card-bkg/2.png`,
+  `${repoName}/card-bkg/3.png`,
+  `${repoName}/card-bkg/4.png`,
+  `${repoName}/card-bkg/5.png`,
+  `${repoName}/card-bkg/6.png`,
 ];
 
 const cardList = document.querySelector(".projects__list");
