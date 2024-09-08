@@ -14,18 +14,18 @@ menuBtn.addEventListener("click", () => {
 // STACK
 
 const icons = [
-  "./../icons/html.svg",
-  "./../icons/css.svg",
-  "./../icons/js.svg",
-  "./../icons/react.svg",
-  "./../icons/redux.svg",
-  "./../icons/bootstrap.svg",
-  "./../icons/tailwind.svg",
-  "./../icons/sass.svg",
-  "./../icons/git.svg",
-  "./../icons/guy.svg",
-  "./../icons/vscode.svg",
-  "./../icons/github.svg",
+  "./icons/html.svg",
+  "./icons/css.svg",
+  "./icons/js.svg",
+  "./icons/react.svg",
+  "./icons/redux.svg",
+  "./icons/bootstrap.svg",
+  "./icons/tailwind.svg",
+  "./icons/sass.svg",
+  "./icons/git.svg",
+  "./icons/guy.svg",
+  "./icons/vscode.svg",
+  "./icons/github.svg",
 ];
 const list = document.querySelector(".stack__list");
 
@@ -73,12 +73,12 @@ const text =
 /* Rectangle 1 */
 
 const cardBkgs = [
-  "./../card-bkg/1.png",
-  "./../card-bkg/2.png",
-  "./../card-bkg/3.png",
-  "./../card-bkg/4.png",
-  "./../card-bkg/5.png",
-  "./../card-bkg/6.png",
+  "./card-bkg/1.png",
+  "./card-bkg/2.png",
+  "./card-bkg/3.png",
+  "./card-bkg/4.png",
+  "./card-bkg/5.png",
+  "./card-bkg/6.png",
 ];
 
 const cardList = document.querySelector(".projects__list");
