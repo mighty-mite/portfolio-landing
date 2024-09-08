@@ -20,19 +20,26 @@ ul {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .menu {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-}
-
-#menu__toggle {
-  opacity: 0;
-  left: 0;
-  top: 0;
-  position: absolute;
 }
 
 .menu__btn {
@@ -118,6 +125,11 @@ ul {
   color: #666666;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
+}
+.menu__item:hover {
+  color: rgb(29, 177, 210);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
@@ -295,6 +307,9 @@ ul {
   display: flex;
   gap: 10px;
   overflow-x: auto;
+  scrollbar-color: rebeccapurple rgb(171, 171, 171);
+  scrollbar-width: thin;
+  padding: 20px 0;
 }
 
 .stack__item {
@@ -333,7 +348,7 @@ ul {
   .stack__list {
     overflow-x: visible;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%;
   }
@@ -366,6 +381,11 @@ ul {
     font-size: 32px;
     line-height: 26px;
     margin-bottom: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .stack__list {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .card {

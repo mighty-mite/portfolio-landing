@@ -3,3 +3,8 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin link-hover {
+  color: rgb(29, 177, 210);
+  transition-duration: 500ms;
+}
